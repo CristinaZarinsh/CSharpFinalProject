@@ -3,3 +3,9 @@
 
 Console.Clear();
 char[] data = ("Ка6кой-то88 ран5домны!й те90кст").ToCharArray();
+var result = string.Empty;
+foreach(var item in data)
+{
+if(!char.IsDigit(item))
+result+= item;
+}
